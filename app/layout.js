@@ -11,12 +11,12 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang="en">
         <body>
-          <SignedOut>
+          {/* <SignedOut>
             <SignInButton />
-          </SignedOut>
-          <SignedIn>
+          </SignedOut> */}
+          <SignedIn className = "flex justify-center">
             <UserButton />
-          </SignedIn>
+           </SignedIn>
           {children}
         </body>
       </html>
